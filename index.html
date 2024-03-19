@@ -1,0 +1,61 @@
+><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="welcome-title " > Gombra Store </h1>
+
+
+    <div class="cart" id="cart">
+        <div class="item" id="item1">
+            <img src="https://www.zenhome.tn/813-medium_default/chaise-oscar-.jpg" alt="Chaise">
+            <span>Chaise</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item1', 1)">+</button>
+            <span id="quantity-item1">1</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item1', -1)">-</button>
+            <button class="delete-btn" onclick="deleteItem('item1')">Delete</button>
+            <span>DT100</span>
+        </div>
+
+        <div class="item" id="item2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7htEmfFI_YkoP8GsiwtpEPeILTC1qCpQMiw&usqp=CAU" alt="Lit">
+            <span>Lit</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item2', 1)">+</button>
+            <span id="quantity-item2">1</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item2', -1)">-</button>
+            <button class="delete-btn" onclick="deleteItem('item2')">Delete</button>
+            <span>DT1200</span>
+        </div>
+        <div class="item" id="item3">
+            <img src="https://www.matelas.tn/wp-content/uploads/2020/09/armoire-4-portes-beige-chene-tunisie.jpg" alt="Armoire">
+            <span>Armoire</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item3', 1)">+</button>
+            <span id="quantity-item3">1</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item3', -1)">-</button>
+            <button class="delete-btn" onclick="deleteItem('item3')">Delete</button>
+            <span>DT1500</span>
+        </div>
+        <div class="item" id="item4">
+            <img src="https://www.femmexpat.com/wp-content/uploads/2022/04/bien-choisir-son-tapis.png" alt="Tapis">
+            <span>Tapis</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item4', 1)">+</button>
+            <span id="quantity-item4">1</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item4', -1)">-</button>
+            <button class="delete-btn" onclick="deleteItem('item4')">Delete</button>
+            <span>DT150</span>
+        </div>
+        
+        
+
+
+        <div class="total" id="total">Total: DT0.00</div>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
